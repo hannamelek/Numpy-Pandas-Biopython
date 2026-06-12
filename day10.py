@@ -95,7 +95,9 @@ print(clean_df)
 
 
 filtered = sorted_df[sorted_df["Expression"] > 100]
-print(filtered)
+print(filtered)  
+
+
 
 
 # In[ ]:
