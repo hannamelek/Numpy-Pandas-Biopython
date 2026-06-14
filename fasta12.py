@@ -17,43 +17,43 @@ print(dna)
 
 # In[3]:
 
-
+#length of the sequence
 print(len(dna))
 
 
 # In[4]:
 
-
+#accessing individual nucleotides
 print(dna[0])
 
 
 # In[5]:
 
-
+#slicing the sequence
 print(dna[1:4])
 
 
 # In[6]:
 
-
+#counting the number of G's in the sequence
 print(dna.count("G"))
 
 
 # In[7]:
 
-
+#complement of the sequence
 print(dna.complement())
 
 
 # In[8]:
 
-
+#reverse complement of the sequence
 print(dna.reverse_complement())
 
 
 # In[9]:
 
-
+#transcribing DNA to RNA
 rna = dna.transcribe()
 
 print(rna)
@@ -61,7 +61,7 @@ print(rna)
 
 # In[10]:
 
-
+#back-transcribing RNA to DNA
 rna = Seq("AUGCGU")
 
 print(rna.back_transcribe())
@@ -69,7 +69,7 @@ print(rna.back_transcribe())
 
 # In[11]:
 
-
+#translating RNA to protein
 print(rna.translate())
 
 
@@ -91,7 +91,7 @@ with open("sample.fasta", "w") as f:
 
 # In[23]:
 
-
+#reading fasta file using SeqIO
 from Bio import SeqIO
 
 for record in SeqIO.parse("sample.fasta", "fasta"):
@@ -101,7 +101,7 @@ for record in SeqIO.parse("sample.fasta", "fasta"):
 
 # In[24]:
 
-
+#calculating the length of each sequence in the fasta file
 from Bio import SeqIO
 
 for record in SeqIO.parse("sample.fasta", "fasta"):
@@ -110,7 +110,7 @@ for record in SeqIO.parse("sample.fasta", "fasta"):
 
 # In[29]:
 
-
+#calculating the GC content of each sequence in the fasta file
 from Bio import SeqIO
 
 for record in SeqIO.parse("sample.fasta", "fasta"):
