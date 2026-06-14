@@ -55,7 +55,21 @@ plt.show
 
 
 # In[ ]:
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
+data = pd.DataFrame({
+    "Sample1": [5, 40, 15],
+    "Sample2": [8, 45, 12],
+    "Sample3": [7, 42, 10]
+}, index=["TP53", "EGFR", "MYC"])
 
+plt.figure(figsize=(5,3))
+sns.heatmap(data, annot=True, cmap="viridis")
+plt.title("Problem 2 Heatmap")
+plt.show()
+
+print("Highest expressed gene: EGFR")
 
 
