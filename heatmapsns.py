@@ -55,6 +55,8 @@ plt.show
 
 
 # In[ ]:
+#highest expressed gene
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -72,4 +74,24 @@ plt.show()
 
 print("Highest expressed gene: EGFR")
 
+#mean column
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = pd.DataFrame({
+    "S1": [10, 20, 30],
+    "S2": [15, 25, 35],
+    "S3": [12, 22, 32]
+}, index=["TP53", "BRCA1", "MYC"])
+
+data["Mean"] = data.mean(axis=1)
+
+print(data)
+
+plt.figure(figsize=(6,3))
+sns.heatmap(data, annot=True, cmap="viridis")
+plt.title("Including Mean Column")
+plt.show()
 
