@@ -58,7 +58,6 @@ This repository contains my learning progress in Python for Bioinformatics, focu
 ---
 
 ## What’s Next 
-
 - Multiple Sequence Alignment (MSA)
 - BLAST searches
 - Protein domain analysis
