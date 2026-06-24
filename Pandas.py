@@ -9,7 +9,7 @@
 
 # In[1]:
 
-
+#creating a pandas DataFrame from a dictionary
 import pandas as pd
 
 
@@ -25,7 +25,7 @@ print(df)
 
 # In[13]:
 
-
+#Read a CSV File
 import pandas as pd
 
 df = pd.read_csv(r"C:\Users\Dr.MAAM\Downloads\genes.csv")
@@ -49,7 +49,7 @@ print(df["type"])
 
 # In[18]:
 
-
+#Filter Rows Based on a Condition
 high_exp = df[df["expression"] > 100]
 
 print(high_exp)
@@ -68,7 +68,7 @@ print(df)
 
 # In[22]:
 
-
+#Group By and Aggregate
 results = df.groupby("Type")["Expression"].mean()
 print(results)
 
