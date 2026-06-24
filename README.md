@@ -57,7 +57,7 @@ This repository contains my learning progress in Python for Bioinformatics, focu
 
 ---
 
-## What’s Next (Planned)
+## What’s Next 
 
 - Multiple Sequence Alignment (MSA)
 - BLAST searches
@@ -70,6 +70,7 @@ This repository contains my learning progress in Python for Bioinformatics, focu
 
 ## Repository structure
 
+```
 Numpy-Pandas-Biopython/
 │
 ├── NumPy basics.ipynb          # arrays, slicing, GC content
@@ -80,6 +81,7 @@ Numpy-Pandas-Biopython/
 ├── heatmapsns.py               # gene expression visualizations
 ├── sample.fasta                # test FASTA dataset
 └── README.md                   # project documentation
+```
 
 ---
 ## Goal
