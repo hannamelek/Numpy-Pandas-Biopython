@@ -92,5 +92,11 @@ To build a strong foundation in computational biology and bioinformatics program
 ## Note
 This is a learning repository, so code is written for understanding and experimentation rather than production use.
 
+--- 
+## Author
+Hanna Melek
+
+GitHub: https://github.com/hannamelek
+
 
 
